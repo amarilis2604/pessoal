@@ -4,11 +4,13 @@
 <title>Pagina Pessoal Amarilis</title>
 </head>
 <style>
-  * {
+  *{
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+
+
 
 
 body {
@@ -20,6 +22,8 @@ padding: 20px;
 }
 
 
+
+
 header {
 background-color: #333;
 color: #fff;
@@ -28,14 +32,20 @@ text-align: center;
 }
 
 
+
+
 header h1 {
 margin-bottom: 10px;
 }
 
 
+
+
 nav ul {
 list-style: none;
 }
+
+
 
 
 nav ul li {
@@ -44,10 +54,14 @@ margin: 0 10px;
 }
 
 
+
+
 nav ul li a {
 color: #fff;
 text-decoration: none;
 }
+
+
 
 
 section {
@@ -55,7 +69,12 @@ margin: 20px 0;
 }
 
 
-section#sobre, section#projetos, section#contato {
+
+
+section#sobre,
+section#projetos,
+section#cadastro,
+section#contato {
 background-color: #fff;
 padding: 20px;
 border-radius: 8px;
@@ -63,10 +82,49 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 
+
+
 footer {
 text-align: center;
 margin-top: 20px;
 }
+h3 {
+text-align: center;
+}
+form{
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  Border-radius: 5px;
+  Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+label,
+input {
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+width: 95%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+input[type="submit"]{
+width: 100%;
+padding: 10px;
+border: none;
+horder-radius: 5px;
+background-color: #007bff;
+color:#fff;
+cursor:pointer;
+}
+input[type="submit"]:hover{
+  background-color: #0056b3;
+}
+
 
 
 </style>
@@ -77,38 +135,52 @@ margin-top: 20px;
 <ul>
 <li><a href="#sobre">Sobre Mim</a></li>
 <li><a href="#projetos">Projetos</a></li>
+<li ><a href="#cadastro">Cadastro</a></li>
 <li><a href="#contato">Contato</a></li>
 </ul>
 </nav>
 </header>
-
-
 <section id="sobre">
 <h2>Sobre Mim</h2>
-<p>Meu nome completo é Amarilis Baretti, tenho 14 anos, gosto de muita coisas:ler, cantar, estudar, entre outras coisas</p>
+<p>Olá, meu nome é Amarilis Baretti, tenho 14 anos, gosto de muita coisas:ler, cantar, estudar, etc.
+Atualmente, estudo na escola Joaquim Amarante, no oitavo ano.Eu gosto de matemática, e educação física. Sabe, a escola está boa, mais ruim ao mesmo tempo. Se no oitavo ano está difícil, imagina no ensino médio.
+Nasci e moro em Videira.
+Tenho olhos castanhos, cabelos cacheados catanhos, uso óculos desde meus 7 anos.
+Sou fanática por tudo que envolve unhas, inclusive, sempre tive unhas grandes e fortes, agora eu estou com elas curtinhas, esperando elas crescerem, estou contando os segundos, as horas, os minutos para minhas unhas crescer e eu ser eu novamente.Agora (que estou escrevendo isso), estou usando uma calça legging preta, uma jaqueta preta também, e a camiseta do Senai (lugar onde estou cursando hoje).Achei interessante nós produzirmos esse tipo de curso pela experiência,pois, podemos ter uma noção do que  podemos fazer e ser no futuro. </p>
 </section>
-
-
 <section id="projetos">
 <h2>Projetos</h2>
 <ul>
-<li>Projeto 1: <a href="#">Descrição do Projeto 1</a></li>
+<li>Projeto 1: <a href="#">Descrição do projeto 1</a></li>
 <li>Projeto 2: <a href="#">Descrição do Projeto 2</a></li>
 <li>Projeto 3: <a href="#">Descrição do Projeto 3</a></li>
-<li>Projeto 2: <a href="#">Descrição do Projeto 2</a></li>
-<li>Projeto 3: <a href="#">Descrição do Projeto 3</a></li>
-<li>Projeto 3: <a href="#">Descrição do Projeto 3</a
+<li>Projeto 4: <a href="#">Descrição do Projeto 4</a></li>
+<li>Projeto 5: <a href="#">Descrição do Projeto 5</a></li>
+<li>Projeto 6: <a href="#">Descrição do Projeto 6</a
 li>
-<li>Projeto 2: <a href="#">Descrição do Projeto 2</a></li>
-<li>Projeto 3: <a href="#">Descrição do Projeto 3</a></li>
+<li>Projeto 7: <a href="#">Descrição do Projeto 7</a></li>
+<li>Projeto 8: <a href="#">Descrição do Projeto 8</a></li>
 </ul>
 </section>
+<section id="cadastro">
+<h3>Cadastro De Pessoas</h3>
+<Form>
+<label>Nome:</label>
+<input type="text" id="Nome" name="Nome" required>  
+<label>Email:</label>
+<input type="email" id="email" name="Email" required>  
+<label>Telefone:</label>
+<input type="tel" id="Telefone" name="Telefone" required>
+<input type="submit" value="Cadastrar">
 
-
+</Form>
+</section>
 <section id="contato">
 <h2>Contato</h2>
-<p>Entre em contato comigo via <a href="amarilisbaretti570@gmail.com">amarilisbaretti570@gmail.com</a>.</p>
+<p>Entre em contato comigo via <a href="amarilisbaretti570@gmail.com">amarilisbaretti570@gmail.com</a></p>
 </section>
+
+
 
 
 <footer>
@@ -116,6 +188,3 @@ li>
 </footer>
 </body>
 </html>
-
-
-
